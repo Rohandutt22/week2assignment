@@ -1,0 +1,22 @@
+1. use mongotest
+2.db.employee.insertOne({'id':1,'fname':'rohan', 'city':'una','salary':[1,2,3,4,5,6,7,8,9,10,11,12]})
+3.db.employee.insertOne({'id':1,'fname':'robin', 'city':'una','salary':[1,2,3,4,5,6,7,8,9,10,11,12]})
+4. db.employee.insertOne({'id':2331,'fname':'robert', 'city':'usa','salary':[1,2,3,4,5,6,7,8,9,10,11,12]})
+5. db.employee.insertOne({'id':23310,'fname':'robert whinskey', 'city':'usa','salary':[1,2,12,4,5,6,7,8,9,10,11,12]})
+6. db.employee.insertOne({'id':32331,'fname':'qwbert', 'city':'canada','salary':[112,122,3,4,5,6,7,8,9,10,11,12]})
+7.db.employee.find()
+8.db.employee.find({'id':1})
+9.db.employee.updateOne({'fname':'rohan'},{$set:{'age':22}})
+10. db.employee.updateMany({'id':1},{$set:{'profile':'sde'}})
+11. db.employee.deleteOne({'fname':'robert'})
+12.db.employee.deleteMany({'id':1})
+
+
+asked queries:
+1)  to display all the documents in the collection
+
+ solution:db.employee.find()
+
+2.   to display the fields _id, fname  for all the documents in the collection.
+
+solution:db.employee.find({},{'id':1,'fname':1})
